@@ -1,0 +1,16 @@
+/* for smooth scroll */
+html{
+    scroll-behavior: smooth;
+}
+/* for Sliding */
+.sliding {
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.sliding.active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
